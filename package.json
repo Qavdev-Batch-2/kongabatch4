@@ -1,0 +1,14 @@
+{
+  "name": "kongabatch4update",
+  "version": "1.0.0",
+  "description": "Konga Automation Update Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobi",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.1"
+  }
+}
