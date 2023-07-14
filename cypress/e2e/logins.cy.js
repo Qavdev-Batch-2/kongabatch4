@@ -1,6 +1,6 @@
 /// <reference types='Cypress'/>
 
-import {logins} from "../fixtures/selectors.js";
+import {logins} from "../fixtures/selectors1.js";
 
 describe("Testing login", function () {
     
