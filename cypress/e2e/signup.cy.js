@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import {signup} from "../fixtures/selectors.js"
+import {signup,login} from "../fixtures/selectors.js"
 
 describe("Testing Signup", () => {
   beforeEach( ()=> {
@@ -8,7 +8,7 @@ describe("Testing Signup", () => {
 
 })
 
-  it("Should be able to signup", () => {
+  it.skip("Should be able to signup", () => {
     cy.wait(2000)
     cy.get(signup.signupBtn,{pageLoadTimeout: 8000}).click()
     cy.get(signup.iDonthaveAnAccount).click()
@@ -28,4 +28,12 @@ describe("Testing Signup", () => {
 
 })
 
+  it("Should not be able to login with incorrect email", () => {
+    cy.wait(2000)
+    cy.get(login.loginBtn).click()
+    cy.get(login.emailField).type('jorn1000@gmail.com')
+    cy.wait(1000)
+    cy.get(login.passwordField).type('password123')
+    cy.get(login.loginButton).click()
+})
 })

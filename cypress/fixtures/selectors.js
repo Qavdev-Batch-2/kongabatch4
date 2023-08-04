@@ -10,3 +10,10 @@ export const signup ={
     createAccountBtn: '.d563b_2w5FH > ._2aac2_3bwnD > ._0a08a_3czMG',
     pin: "#pin"
 } 
+
+export const login ={
+    loginBtn: '._12e27_1r3kc > ._7ad32_SD12Y',
+    emailField: '#username',
+    passwordField: '#password',
+    loginButton: '.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG'
+}
