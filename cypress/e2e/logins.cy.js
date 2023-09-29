@@ -14,10 +14,10 @@ describe("Testing login", function () {
     
     it("LOGIN - I Should be able to sign in my account with valid", function () {
         logins.login_button()
-        logins.enterUsername('jorn1000@yopmail.com')
-        logins.enterPassword('password123')
+        logins.enterUsername('teestylez4@gmail.com')
+        logins.enterPassword('Testing4#')
         logins.clickLogin()
-
+        cy.wait(20000)
     })
 
     it('Login with invalid details', function(){
@@ -25,5 +25,6 @@ describe("Testing login", function () {
         logins.enterUsername('jorn1000@yopmail.co')
         logins.enterPassword('password123')
         logins.clickLogin()
+        cy.wait(2000)
     })
     })
