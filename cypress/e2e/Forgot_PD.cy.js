@@ -16,7 +16,9 @@ describe('Testing Forgotten password', function(){
         Forgot_PD.Forgotten_pwd()
         Forgot_PD.entermail('teestylez4@gmail.com')
         Forgot_PD.Submit_button()
+        cy.wait(20000)
     })
+
 
     it('Forgotten password with an unresgistered email', function(){
         Forgot_PD.login_button()
